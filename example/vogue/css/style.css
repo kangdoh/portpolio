@@ -1,0 +1,287 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* 전체설정 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #bbb;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: none;
+    vertical-align: bottom;
+}
+
+
+/* 기본설정 */
+body{
+    font-family: 'Orbitron', sans-serif;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #111
+}
+
+/* wrap설정 */
+#wrap{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* 메뉴버튼 */
+.btnMenu{
+    color: #fff;
+    font-size: 40px;
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    z-index: 3;
+}
+.btnMenu i{
+
+}
+
+/* 네비설정 */
+nav{
+    background-color: #eee;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    z-index: 2;
+}
+nav h1{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 80px;
+}
+nav h1 img{
+    width: 100%;
+    height: auto;
+}
+#gnb{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+#gnb li{}
+#gnb a{
+    display: block;
+    font-size: 18px;
+    line-height: 4;
+    text-align: center;
+    color: #000;
+}
+
+/* 섹션설정 */
+section{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+section>div{
+    position: absolute;
+    /* fixed는 무조건 body가 기준 / absolute는 부모가 기준이다. */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.box1{
+    background-color: azure;
+}
+.box2{
+    background-color: antiquewhite;
+}
+.box3{
+    background-color: aquamarine;
+}
+
+section>div.on{
+    opacity: 1;
+    z-index: 3;
+}
+
+
+
+p{
+    float: left;
+}
+
+/* 박스1설정 */
+.box1>p:nth-child(1){
+    width: 50%;
+    height: 25%;
+    background-color: #aaa;
+}
+.box1>p:nth-child(2){
+    width: 25%;
+    height: 25%;
+    background-color: #bbb;
+}
+.box1>p:nth-child(3){
+    width: 25%;
+    height: 25%;
+    background-color: #ccc;
+}
+.box1>p:nth-child(4){
+    width: 25%;
+    height: 25%;
+    background-color: #ddd;
+}
+.box1>p:nth-child(5){
+    width: 25%;
+    height: 25%;
+    background-color: #eee;
+}
+.box1>p:nth-child(6){
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    float: right;
+}
+.box1>p:nth-child(7){
+    width: 25%;
+    height: 25%;
+    background-color: #111;
+}
+.box1>p:nth-child(8){
+    width: 25%;
+    height: 25%;
+    background-color: #222;
+}
+.box1>p:nth-child(9){
+    width: 25%;
+    height: 25%;
+    background-color: rgb(39, 38, 38);
+}
+.box1>p:nth-child(10){
+    width: 50%;
+    height: 25%;
+    background-color: #444;
+}
+.box1>p:nth-child(11){
+    width: 25%;
+    height: 25%;
+    background-color: #555;
+}
+
+
+/* 박스2설정 */
+.box2>p:nth-child(1){
+    width: 25%;
+    height: 25%;
+    background-color: #aaa;
+}
+.box2>p:nth-child(2){
+    width: 25%;
+    height: 25%;
+    background-image: url(../img/w1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box2>p:nth-child(3){
+    width: 50%;
+    height: 25%;
+    background-color: #ccc;
+}
+.box2>p:nth-child(4){
+    width: 25%;
+    height: 50%;
+    background-color: #ddd;
+}
+.box2>p:nth-child(5){
+    width: 50%;
+    height: 50%;
+    background-color: #eee;
+}
+.box2>p:nth-child(6){
+    width: 25%;
+    height: 25%;
+    background-color: #fff;
+}
+.box2>p:nth-child(7){
+    width: 25%;
+    height: 25%;
+    background-color: #111;
+}
+.box2>p:nth-child(8){
+    width: 25%;
+    height: 25%;
+    background-color: #222;
+}
+.box2>p:nth-child(9){
+    width: 25%;
+    height: 25%;
+    background-color: #333;
+}
+.box2>p:nth-child(10){
+    width: 25%;
+    height: 25%;
+    background-color: #444;
+}
+.box2>p:nth-child(11){
+    width: 25%;
+    height: 25%;
+    background-color: #555;
+}
+
+
+/* 박스3설정 */
+.box3>p:nth-child(1){
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/k1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box3>p:nth-child(2){
+    background-color: #ccc;
+    width: 25%;
+    height: 25%;
+}
+.box3>p:nth-child(3){
+    width: 25%;
+    height: 25%;
+    background-image: url(../img/k2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box3>p:nth-child(4){
+    background-color: #aaa;
+    width: 50%;
+    height: 25%;
+}
+.box3>p:nth-child(5){
+    width: 25%;
+    height: 50%;
+    background-image: url(../img/k3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box3>p:nth-child(6){
+    background-color: #222;
+    width: 25%;
+    height: 25%;
+}
+.box3>p:nth-child(7){
+    width: 25%;
+    height: 25%;
+    background-image: url(../img/k4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* 반응형 */
+@keyframes{
+}
